@@ -12,7 +12,7 @@ mongoose.connect('mongodb+srv://kfarzan13:Farzankh13@demodb.dclp2mx.mongodb.net/
 app.use('/',route)
 
 app.use(function (req, res) {
-    res.status(404).send({ status: false, msg: "Url not found !!!" })
+    res.status(404).send({ status: false, message: "Url not found !!!" })
 })
 
 app.listen(process.env.PORT || 3000 , function(){
